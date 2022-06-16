@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Button } from "ui";
 import { sum } from "utils";
-import { useAppDispatch, useAppSelector } from "../features/hooks/redux";
+import { useAppDispatch, useAppSelector } from "../features/common/hooks/redux";
 import { setUser } from "../features/user/store/userSlice";
 
 export default function Web() {
