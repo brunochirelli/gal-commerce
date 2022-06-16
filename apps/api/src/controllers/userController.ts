@@ -99,8 +99,6 @@ export const userController = {
     const params = req.params;
     const query = req.query;
 
-    console.log(query);
-
     try {
       const user = await prisma.user.findFirst({
         where: {

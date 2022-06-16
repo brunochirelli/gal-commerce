@@ -26,6 +26,7 @@ export default function Web() {
       <p>Maybe {sum(Number(a), Number(b))}</p>
 
       <Link href={"/login"}>Login</Link>
+      <Link href={"/profile"}>Profile</Link>
 
       {user && (
         <>

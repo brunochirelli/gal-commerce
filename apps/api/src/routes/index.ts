@@ -7,6 +7,6 @@ const app = express();
 
 app.use("/products", productsRouter);
 app.use("/cart", cartRouter);
-app.use("/user", userRouter);
+app.use("/users", userRouter);
 
 export { app as appRouter };
