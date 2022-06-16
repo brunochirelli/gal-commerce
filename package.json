@@ -23,6 +23,7 @@
   },
   "packageManager": "pnpm@7.1.9",
   "dependencies": {
-    "@babel/core": "^7.18.5"
+    "@babel/core": "^7.18.5",
+    "eslint": "^8.17.0"
   }
 }

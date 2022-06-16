@@ -8,7 +8,8 @@
     "dev": "node-dev --respawn ./src/main.ts",
     "dev:debug": "DEBUG=express:* node-dev --respawn ./src/main.ts",
     "mock": "prism mock ./src/docs/gal-commerce.oa.yml -d -p 4040",
-    "postinstall": "pnpm prisma generate"
+    "postinstall": "pnpm prisma generate",
+    "lint": "eslint ./src/**/*.ts"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
