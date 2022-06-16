@@ -1,4 +1,5 @@
 export interface User {
+  id: string;
   email: string;
   password: string;
   firstName: string;
@@ -6,5 +7,8 @@ export interface User {
   cartId?: string;
 }
 
-export type UserRegisterBody = Omit<User, "cartId">;
+export type UserRegisterBody = {
+  confirmPassword: string;
+  confirmEmail: string;
+} & Omit<User, "cartId" | "id">;
 export type UserLoginBody = Pick<User, "email" | "password">;
