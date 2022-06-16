@@ -1,0 +1,13 @@
+title: CartProducts
+type: object
+description: 'Product in cart'
+properties:
+  allOf: 
+    - $ref: './Product.yml'
+    - type: object
+      properties:
+        quantity:
+          type: integer
+          minimum: 1
+          maximum: 20
+          example: 1

@@ -1,0 +1,3 @@
+{"level":"warn","message":"fudeu","service":"user-service"}
+{"level":"warn","message":"fudeu","service":"user-service"}
+{"level":"info","message":"\n✌ Listening on http://localhost:4004\n","service":"user-service"}

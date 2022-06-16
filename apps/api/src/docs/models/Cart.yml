@@ -1,0 +1,36 @@
+title: Cart
+x-tags:
+  - Cart
+type: object
+properties:
+  id:
+    type: string
+  items:
+    type: object
+    properties:
+      products:
+        type: array
+        maxItems: 5
+        minItems: 2
+        items:
+          $ref: ./CartProduct.yml
+  createdAt:
+    type: string
+    format: date-time
+  updatedAt:
+    type: string
+    format: date-time
+  shippingPrice: 
+    type: integer
+    minimum: 0
+    maximum: 1000
+  shippingType:
+    type: string
+    enum:
+      - standard
+      - express
+  total: 
+    type: integer
+    minimum: 20
+    maximum: 1000
+    example: 456

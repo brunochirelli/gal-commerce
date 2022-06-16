@@ -1,0 +1,23 @@
+title: User
+type: object
+properties:
+  id:
+    type: string
+  firstName:
+    type: string
+    example: 'Bruno'
+    x-faker: name.firstName
+  lastName:
+    type: string
+    example: 'Chirelli'
+    x-faker: name.lastName
+  email:
+    type: string
+    format: email
+    example: 'email@email.com'
+  emailVerified: 
+    type: boolean
+    description: Set to true if the user's email has been verified.
+  cartId:
+    type: string
+    format: uuid

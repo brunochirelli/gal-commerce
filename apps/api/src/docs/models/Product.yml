@@ -1,0 +1,16 @@
+title: Product
+type: object
+properties:
+  id:
+    type: string
+  name:
+    type: string
+    x-faker: commerce.productName
+  price:
+    type: integer
+    minimum: 1
+    maximum: 1000
+    example: 10
+  merchantName:
+    type: string
+    x-faker: name.firstName
